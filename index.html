@@ -99,6 +99,12 @@ html.intro-on .intro{display:flex;position:fixed;inset:0;z-index:100;background:
 .ba-chips button{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 16px;border-radius:999px;font:500 14px Manrope,system-ui,sans-serif;cursor:pointer}
 .ba-chips button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
 .ba-cap{margin:12px 0 0;color:var(--mute);font-size:15px}
+.works{overflow:hidden;overflow:clip}
+html.js .work.rv{transform:translateX(-46px)}
+html.js .work.rv:nth-child(even){transform:translateX(46px)}
+@media(min-width:760px){html.js .work.rv:nth-child(3n+1){transform:translateX(-46px)}html.js .work.rv:nth-child(3n+2){transform:translateY(34px)}html.js .work.rv:nth-child(3n){transform:translateX(46px)}}
+html.js .work.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html.js .work.rv{transform:none!important}}
 </style>
 <script>document.documentElement.classList.add("js");var R=document.documentElement;if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){R.classList.add("intro-on");setTimeout(function(){R.classList.remove("intro-on")},5200)}var th="dark";try{if(localStorage.getItem("themePref")==="light")th="light"}catch(e){}document.documentElement.setAttribute("data-theme",th);</script>
 </head>
